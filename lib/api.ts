@@ -12,7 +12,9 @@ export async function getCars(filters: CarFilters = {}): Promise<CarsResponse> {
   if (filters.seatingCapacity) searchParams.set("seatingCapacity", filters.seatingCapacity.toString())
   if (filters.sortBy) searchParams.set("sortBy", filters.sortBy)
 
-  const res = await fetch(`/api/cars?${searchParams.toString()}`)
+  const baseUrl = typeof window === "undefined" ? process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000" : ""
+
+  const res = await fetch(`${baseUrl}/api/cars?${searchParams.toString()}`)
 
   if (!res.ok) {
     throw new Error("Failed to fetch cars")
@@ -22,7 +24,10 @@ export async function getCars(filters: CarFilters = {}): Promise<CarsResponse> {
 }
 
 export async function getCar(id: string): Promise<Car | null> {
-  const res = await fetch(`/api/cars/${id}`)
+
+  const baseUrl = typeof window === "undefined" ? process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000" : ""
+
+  const res = await fetch(`${baseUrl}/api/cars/${id}`)
 
   if (!res.ok) {
     if (res.status === 404) {
