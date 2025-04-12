@@ -1,0 +1,248 @@
+import type { Car } from "./types"
+
+export const brands = ["Toyota", "Honda", "Ford", "BMW", "Mercedes", "Audi", "Tesla", "Hyundai", "Kia", "Nissan"]
+
+export const fuelTypes = ["Petrol", "Diesel", "Electric", "Hybrid"]
+
+export const cars: Car[] = [
+  {
+    id: "1",
+    name: "Toyota Camry",
+    brand: "Toyota",
+    price: 25000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Toyota Camry is a reliable and fuel-efficient sedan with a spacious interior and comfortable ride. It comes with a range of modern features and safety technologies.",
+  },
+  {
+    id: "2",
+    name: "Honda Civic",
+    brand: "Honda",
+    price: 22000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Honda Civic is a compact car known for its reliability, fuel efficiency, and sporty handling. It offers a comfortable interior with modern technology features.",
+  },
+  {
+    id: "3",
+    name: "Ford Mustang",
+    brand: "Ford",
+    price: 45000,
+    fuelType: "Petrol",
+    seatingCapacity: 4,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Ford Mustang is an iconic American muscle car with powerful engine options and distinctive styling. It offers exhilarating performance and a thrilling driving experience.",
+  },
+  {
+    id: "4",
+    name: "BMW 3 Series",
+    brand: "BMW",
+    price: 55000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The BMW 3 Series is a luxury compact sedan that combines performance, comfort, and technology. It offers a premium driving experience with refined handling and upscale features.",
+  },
+  {
+    id: "5",
+    name: "Tesla Model 3",
+    brand: "Tesla",
+    price: 60000,
+    fuelType: "Electric",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Tesla Model 3 is an all-electric sedan with impressive range and acceleration. It features a minimalist interior with a large touchscreen display and advanced autopilot capabilities.",
+  },
+  {
+    id: "6",
+    name: "Mercedes-Benz E-Class",
+    brand: "Mercedes",
+    price: 65000,
+    fuelType: "Diesel",
+    seatingCapacity: 5,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Mercedes-Benz E-Class is a luxury midsize sedan with elegant styling and a sophisticated interior. It offers a smooth ride, advanced safety features, and cutting-edge technology.",
+  },
+  {
+    id: "7",
+    name: "Audi Q5",
+    brand: "Audi",
+    price: 58000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Audi Q5 is a luxury compact SUV with a stylish design and high-quality interior. It offers a comfortable ride, capable performance, and a range of advanced technology features.",
+  },
+  {
+    id: "8",
+    name: "Hyundai Tucson",
+    brand: "Hyundai",
+    price: 32000,
+    fuelType: "Hybrid",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1633859036994-da7cbc4e0f21?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Hyundai Tucson is a compact SUV with bold styling and a feature-rich interior. It offers good fuel economy, a comfortable ride, and a comprehensive warranty package.",
+  },
+  {
+    id: "9",
+    name: "Kia Telluride",
+    brand: "Kia",
+    price: 42000,
+    fuelType: "Petrol",
+    seatingCapacity: 8,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1621807725341-a4942a9e0abb?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Kia Telluride is a midsize SUV with a spacious interior and upscale features. It offers comfortable seating for up to eight passengers, a smooth ride, and a powerful engine.",
+  },
+  {
+    id: "10",
+    name: "Nissan Leaf",
+    brand: "Nissan",
+    price: 35000,
+    fuelType: "Electric",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1593055357429-62eaf3b259cc?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Nissan Leaf is an all-electric hatchback with zero emissions and low operating costs. It offers a practical range for daily commuting and a comfortable, quiet driving experience.",
+  },
+  {
+    id: "11",
+    name: "Toyota RAV4",
+    brand: "Toyota",
+    price: 38000,
+    fuelType: "Hybrid",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Toyota RAV4 is a compact SUV with rugged styling and a practical interior. The hybrid version offers excellent fuel economy without sacrificing performance or utility.",
+  },
+  {
+    id: "12",
+    name: "Honda CR-V",
+    brand: "Honda",
+    price: 36000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Honda CR-V is a compact SUV known for its reliability, spacious interior, and fuel efficiency. It offers a comfortable ride and a versatile cargo area for everyday use.",
+  },
+  {
+    id: "13",
+    name: "Ford F-150",
+    brand: "Ford",
+    price: 52000,
+    fuelType: "Diesel",
+    seatingCapacity: 6,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1605893477799-b99e3b8b93fe?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Ford F-150 is a full-size pickup truck with impressive towing and hauling capabilities. It offers a range of powerful engine options and a comfortable, tech-filled cabin.",
+  },
+  {
+    id: "14",
+    name: "BMW X5",
+    brand: "BMW",
+    price: 75000,
+    fuelType: "Diesel",
+    seatingCapacity: 7,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The BMW X5 is a luxury midsize SUV with athletic handling and a premium interior. It offers a smooth ride, powerful engine options, and a wide range of advanced technology features.",
+  },
+  {
+    id: "15",
+    name: "Tesla Model Y",
+    brand: "Tesla",
+    price: 65000,
+    fuelType: "Electric",
+    seatingCapacity: 7,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1619317222979-33f3d99c5f95?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Tesla Model Y is an all-electric compact SUV with impressive range and performance. It features a minimalist interior, advanced autopilot capabilities, and a spacious cargo area.",
+  },
+  {
+    id: "16",
+    name: "Mercedes-Benz GLE",
+    brand: "Mercedes",
+    price: 78000,
+    fuelType: "Petrol",
+    seatingCapacity: 7,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1549399542-7e8f2e928464?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Mercedes-Benz GLE is a luxury midsize SUV with elegant styling and a sophisticated interior. It offers a comfortable ride, advanced safety features, and cutting-edge technology.",
+  },
+  {
+    id: "17",
+    name: "Audi A4",
+    brand: "Audi",
+    price: 48000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Audi A4 is a luxury compact sedan with a refined interior and sophisticated technology. It offers a comfortable ride, precise handling, and a range of efficient engine options.",
+  },
+  {
+    id: "18",
+    name: "Hyundai Santa Fe",
+    brand: "Hyundai",
+    price: 42000,
+    fuelType: "Hybrid",
+    seatingCapacity: 7,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1633704006771-2b9b5f06ead6?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Hyundai Santa Fe is a midsize SUV with a stylish design and a feature-rich interior. It offers comfortable seating for up to seven passengers, good fuel economy, and advanced safety features.",
+  },
+  {
+    id: "19",
+    name: "Kia Sportage",
+    brand: "Kia",
+    price: 32000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1635769444738-e48dd16d79a3?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Kia Sportage is a compact SUV with distinctive styling and a well-equipped interior. It offers a comfortable ride, good fuel economy, and a comprehensive warranty package.",
+  },
+  {
+    id: "20",
+    name: "Nissan Rogue",
+    brand: "Nissan",
+    price: 34000,
+    fuelType: "Petrol",
+    seatingCapacity: 5,
+    year: 2023,
+    image: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?q=80&w=2000&auto=format&fit=crop",
+    description:
+      "The Nissan Rogue is a compact SUV with a spacious interior and a smooth ride. It offers good fuel economy, a versatile cargo area, and a range of advanced safety features.",
+  },
+]
